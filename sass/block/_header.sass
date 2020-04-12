@@ -8,12 +8,15 @@
     justify-content: space-between
     align-items: center
 .nav
+  &__wrap
+    display: flex
+    align-items: center
   &__list
     display: flex
   &__item
     margin: 0 15px
     a
-      +mm
+      +msb
       font-size: 1.6em
       text-decoration: none
       color: #000000
@@ -106,6 +109,8 @@
 .line-3-transform
   transform: rotate(45deg) translate(-3px, 5px)
 
+  
+
 // доп. мобильное меню
 .mob__menu
   &-more
@@ -120,7 +125,9 @@
     color: $red
 
 
-
+@media (max-width: 850px)
+  .callback
+    display: none
 
 @media (max-width: 600px)
   .btn__menu

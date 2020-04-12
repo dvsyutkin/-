@@ -1,0 +1,60 @@
+.hero
+    background: #000
+    color: #ffffff
+    &__title
+        +meb
+        font-size: 6.4em
+        line-height: 55px
+    &__slider
+        position: relative
+        &-box
+            padding-top: 100px
+            padding-bottom: 100px
+            background: url('../img/hero-slider-1.jpg') center no-repeat
+            background-size: cover
+    &__subtitle
+        max-width: 650px
+        line-height: 29px
+        margin-top: 30px
+        font-size: 1.9em
+    &__name
+        margin-top: 70px
+        +mb
+        font-size: 2em
+    &__address
+        margin-top: 8px
+        font-size: 1.4em
+    &__desc
+        display: inline-block
+        margin: 25px 15px 35px 0
+        text-transform: uppercase
+        +mb
+        font-size: 1.4em
+        color: #ffffff
+        text-decoration: none
+    &__box-nav
+        display: flex
+        align-items: center
+    &__list
+        display: flex
+        margin-left: 66px
+        &-link
+            +mb
+            font-size: 1.3em
+            text-decoration: none
+            color: #ffffff
+    &__item
+        display: flex
+        align-items: center
+        margin: 0 20px
+
+.arrow
+    position: absolute
+    top: 50%
+    right: 13%
+    transform: translateY(-50%)
+.active
+    margin: 0
+    padding: 15px 21px
+    border: 2px $red solid
+    border-radius: 10px

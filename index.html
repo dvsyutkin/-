@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вяттехинвестстрой</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    <h1>Привет мир</h1>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__logo">
+                    <a href="#"><img src="img/logo.png" alt="Cook Time"></a>
+                </div>
+
+
+                <div class="nav__wrap">
+                    <nav class="nav">
+
+                        <div class="nav__menu hide">
+                            <ul class="nav__menu-list">
+                                <li class="nav__menu-item"><a href="#">Продукция</a></li>
+                                <li class="nav__menu-item more">
+                                    <a href="#">Услуги<span>&lsaquo;</span></a>
+
+                                    <ul class="mob__menu-more">
+                                        <li class="menu__item-more"><a href="#">Trade-in</a></li>
+                                        <li class="menu__item-more"><a href="#">Сервисное обслуживание</a></li>
+                                        <li class="menu__item-more"><a href="#">Выкуп оборудования</a></li>
+                                    </ul>
+
+                                </li>
+                                <li class="nav__menu-item"><a href="#">Компания</a></li>
+                                <li class="nav__menu-item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+
+                        <button class="btn__menu">
+                            <span class="line-menu line-1"></span>
+                            <span class="line-menu line-2"></span>
+                            <span class="line-menu line-3"></span>
+                        </button>
+
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#">О компании</a></li>
+                            <li class="nav__item"><a class="nav-serv" href="#">Услуги<img src="img/arrow-down.png"
+                                        alt=""></a></li>
+                            <li class="nav__item"><a href="#">Портфолио</a></li>
+                            <li class="nav__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="btn callback ">Обратный звонок</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- /.container -->
+
+    </header>
+    <!-- /.header -->
+
+
+    <!-- выпадающее меню -->
+    <ul class="menu__serv">
+        <li class="menu__serv-item"><a href="" class="menu__serv-link">Trade-in</a></li>
+        <li class="menu__serv-item"><a href="" class="menu__serv-link">Cервисное обслуживание</a></li>
+        <li class="menu__serv-item"><a href="" class="menu__serv-link">Выкуп оборудования</a></li>
+    </ul>
+
+
+    <main class="main">
+        <section class="section hero">
+
+            <div class="hero__slider">
+
+                <div class="hero__slider-box">
+                    <div class="container">
+
+                        <h1 class="h hero__title">Проектирование<br> и строительство в лице<br> одной организации</h1>
+                        <div class="hero__subtitle">
+                            Полный комплекс проектных, строительных, монтажных и ремонтных работ объектов различного
+                            целевого назначения.
+                        </div>
+                        <div class="hero__address-box">
+                            <div class="hero__name">Илим</div>
+                            <div class="hero__address">ул. Ленини д.116</div>
+                            <a href="#" class="hero__desc">Проектирование</a>
+                            <a href="#" S class="hero__desc">реконструкция</a>
+                        </div>
+                        <div class="hero__box-nav">
+                            <button class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></button>
+                            <ul class="hero__list">
+                                <li class="hero__item active"><a href="#" class="hero__list-link ">1</a></li>
+                                <li class="hero__item"><a href="#" class="hero__list-link">2</a></li>
+                                <li class="hero__item"><a href="#" class="hero__list-link">3</a></li>
+                                <li class="hero__item"><a href="#" class="hero__list-link">4</a></li>
+                                <li class="hero__item"><a href="#" class="hero__list-link">5</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <a class="arrow arrow-next" href="#"><img src="img/arrow-big.png" alt=""></a>
+            </div>
+
+        </section>
+        <!-- /.section hero -->
+
+        <div class="cart-box">
+            <div class="cart__box cart__box_1">
+                <div class="cart__box-title">Проектирование</div>
+                <div class="cart__box-desc">Разработка эскизного проекта, проектной и рабочей документации,
+                    проектов интерьера помещений и ландшафтного дизайна.</div>
+            </div>
+            <div class="cart__box cart__box_2">
+                <div class="cart__box-title">Строительство</div>
+                <div class="cart__box-desc">Капитальное строительство "под ключ". Реконструкция и ремонт зданий и сооружений. Реставрация объектов недвижимости и возвращение утраченного или искажённого исторического облика.</div>
+            </div>
+            <div class="cart__box cart__box_3">
+                <div class="cart__box-title">Инженерные системы</div>
+                <div class="cart__box-desc"><p class="cart__p">
+                    Обустройство и обслуживание инженерных систем. Теплоснабжение. Водоснабжение и канализация. Наружное освещение
+                </p>
+                    <p>
+                        Электропотребление. Вентиляция и кондиционирование. Сигнализация и связь. Пожаротушениние.
+                    </p></div>
+            </div>
+        </div>
+        <!-- /.cart-box -->
+    </main>
+    <!-- /.main -->
+
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
