@@ -1,4 +1,5 @@
 .hero
+    z-index: 10
     position: relative
     background: #000
     color: #ffffff
@@ -36,6 +37,7 @@
         display: flex
         align-items: center
     &__list
+        z-index: 999
         position: absolute
         bottom: 100px
         right: 50%
@@ -50,19 +52,43 @@
         align-items: center
         margin: 0 20px
 
+.owl-theme .owl-dots, .owl-theme .owl-nav
+    position: absolute
+    display: flex
+    bottom: 100px
+    right: 55%
+.owl-theme .owl-dots .owl-dot span
+    +mb
+    font-size: 1.3em
+    text-decoration: none
+    color: #ffffff
+    background: transparent
+.owl-theme .owl-dots .owl-dot.active span
+    width: 51px
+    height: 47px
+    margin: 0
+    padding: 16px 21px
+    border: 2px $red solid
+    border-radius: 10px
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+    background: transparent
+
 .arrow
+    z-index: 999
     position: absolute
     top: 50%
     right: 13%
     transform: translateY(-50%)
-.active
+    background: transparent
+    border: none
+.slider-active
     margin: 0
     padding: 15px 21px
     border: 2px $red solid
     border-radius: 10px
 
 @media ( max-width:  1014px)
-    .hero__list
+    .owl-theme .owl-dots, .owl-theme .owl-nav
         right: 40%
 
 @media ( max-width:  992px)
@@ -73,16 +99,17 @@
         &__subtitle
             max-width: 450px
             line-height: 24px
+    .owl-theme .owl-dots, .owl-theme .owl-nav
+        right: 50%
 
 @media ( max-width:  850px)
-    .hero__list
+    .owl-theme .owl-dots, .owl-theme .owl-nav
         right: 30%
 
 @media (max-width: 768px)
     .hero
         &__list
-            bottom: 50px
-            right: 10px
+            
         &__slider
             &-box
                 padding: 50px 0
@@ -92,6 +119,9 @@
         height: 45px
         img
             height: 100%
+    .owl-theme .owl-dots, .owl-theme .owl-nav
+        bottom: 50px
+        right: 10px
 
 @media (max-width: 600px)
     .hero
@@ -100,12 +130,16 @@
             line-height: 19px
         &__box-nav
             flex-wrap: wrap
-        &__list
-            bottom: 15px
-            left: 15px
         &__slider
             &-box
                 padding-bottom: 80px
+    .owl-theme .owl-dots, .owl-theme .owl-nav
+        bottom: 15px
+        left: 15px
+    .owl-theme .owl-dots .owl-dot.active span
+        width: 40px
+        height: 40px
+        padding: 14px
 
 @media (max-width: 440px)
     .hero

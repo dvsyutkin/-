@@ -37,12 +37,28 @@ window.addEventListener('DOMContentLoaded', function () {
 	});
 
 
-	// owl carusel
-	$(document).ready(function(){
-		$(".owl-carousel").owlCarousel({
-			items:1
+		// owl carusel
+		const sliderInfo = $('.owl-carousel');
+		sliderInfo.owlCarousel($.extend({}, {
+			// nav: true,
+			items: 1
+
+		}));
+		
+		const next = document.querySelector('.arrow-next');
+		next.addEventListener('click', function() {
+			sliderInfo.trigger('next.owl.carousel')
 		});
-	  });
+		// $('.arrow arrow-next').click(console.log('sadsasd'));
+		// $('.arrow-next').click(sliderInfo.trigger('next.owl.carousel'));
+
+		//   Цифры в dot-ах owl-карусели вместо дисков
+		  var i= 1; 
+		  $('.owl-dot').each(function(){   
+			   $(this).find('span').html(i);   
+			   i++; 
+		});
+		
 
 
 			
