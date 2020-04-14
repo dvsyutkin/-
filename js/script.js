@@ -37,6 +37,13 @@ window.addEventListener('DOMContentLoaded', function () {
 	});
 
 
+	// owl carusel
+	$(document).ready(function(){
+		$(".owl-carousel").owlCarousel({
+			items:1
+		});
+	  });
+
 
 			
 });
