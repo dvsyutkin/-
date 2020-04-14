@@ -1,6 +1,7 @@
 .features
     padding: 130px 0
-    background: #F9F9F9 url('../img/features-bg.jpg') center right no-repeat
+    background: #F9F9F9 url('../img/features-bg.jpg') bottom right no-repeat
+    background-size: contain
     &__title
         max-width: 550px
     &__wrap
@@ -17,3 +18,24 @@
             margin: 15px 20px
         &-text
             max-width: 280px
+
+@media ( max-width: 1095px )
+    .features__box
+            margin-right: 0
+
+@media (max-width: 768px)
+    .features
+        padding: 50px 0
+        &__wrap
+            flex-wrap: wrap
+
+@media (max-width: 600px)
+    .features
+        background: none
+        &__wrap
+            margin-top: 30px
+        &__cart
+            margin-bottom: 20px
+        &__title
+            width: 100%
+            font-size: 2em

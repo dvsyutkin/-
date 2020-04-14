@@ -58,3 +58,44 @@
     padding: 15px 21px
     border: 2px $red solid
     border-radius: 10px
+
+@media ( max-width:  992px)
+    .hero
+        &__title
+            font-size: 4.4em
+            line-height: 40px
+        &__subtitle
+            max-width: 450px
+            line-height: 24px
+
+@media (max-width: 768px)
+    .hero
+        &__slider
+            &-box
+                padding: 50px 0
+        &_name
+            margin-top: 40px
+    .arrow
+        height: 45px
+        img
+            height: 100%
+
+@media (max-width: 600px)
+    .hero
+        &__subtitle
+            max-width: 250px
+            line-height: 19px
+        &__box-nav
+            flex-wrap: wrap
+        &__list
+            width: 100%
+            margin-top: 20px
+            margin-left: 0
+
+@media (max-width: 440px)
+    .hero
+        &__title
+            font-size: 2.4em
+            line-height: 21px
+
+    

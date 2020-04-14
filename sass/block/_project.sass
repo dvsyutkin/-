@@ -32,3 +32,39 @@
         text-align: center
         
 
+
+@media (max-width: 920px)
+    .project
+        &__clients
+            &-box
+                margin-top: 50px
+                flex-wrap: wrap
+                justify-content: space-around
+            &-cart
+                width: 30%
+                margin: 0
+                margin-bottom: 20px
+
+@media (max-width: 768px)
+    .project
+        &__example
+            &-box
+                flex-wrap: wrap
+        
+
+@media (max-width: 600px)
+    .project
+        padding: 50px 0
+        &__example
+            width: 50%
+            a img
+                100%
+            &-box
+                margin-top: 50px
+        &__clients
+            &-box
+                margin-top: 30px
+            &-cart
+                width: 49%
+                margin: 0
+                margin-bottom: 12px
