@@ -55,7 +55,7 @@
                             <li class="nav__item"><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
-                    <button class="btn callback ">Обратный звонок</button>
+                    <button class="btn btn-callback ">Обратный звонок</button>
                 </div>
             </div>
         </div>
@@ -307,10 +307,16 @@
     <script >
         window.addEventListener('DOMContentLoaded', function() {
             $('.portfolio__slider .owl-carousel').owlCarousel({
-                items: 2.5,
+                items: 1.5,
                 loop: true,
                 margin: 20,
-                center: true
+                center: true,
+                responsive : {
+                    600 : {
+                        items: 2.5
+                    }
+                }
+                
             });
             
             
