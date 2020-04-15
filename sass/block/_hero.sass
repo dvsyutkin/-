@@ -83,10 +83,10 @@
     color: #ffffff
     background: transparent
 .owl-theme .owl-dots .owl-dot.active span
-    width: 51px
-    height: 47px
+    width: 45px
+    height: 45px
     margin: 0
-    padding: 16px 21px
+    padding: 15px
     border: 2px $red solid
     border-radius: 10px
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
@@ -100,11 +100,9 @@
     transform: translateY(-50%)
     background: transparent
     border: none
-.slider-active
-    margin: 0
-    padding: 15px 21px
-    border: 2px $red solid
-    border-radius: 10px
+    transition: 0.4s
+    &:hover
+        right: 12%
 
 @media ( max-width:  1014px)
     .owl-theme .owl-dots, .owl-theme .owl-nav
