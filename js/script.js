@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	// всплывающее окно
 	const btnOrder = document.querySelectorAll('.btn-order'),
-		popupOverlay = document.querySelector('.popup__overlay');
+	popupOverlay = document.querySelector('.popup__overlay');
 	btnOrder.forEach(element => {
 		element.addEventListener('click', function () {
 			popupOverlay.style.display = 'block';
@@ -52,6 +52,12 @@ window.addEventListener('DOMContentLoaded', function () {
 			document.body.style.overflow = "";
 		}
 	});
+	const closeForm = document.querySelector('.popup-form-btn-close');
+	closeForm.addEventListener('click', ()=>{
+		popupOverlay.style.display = 'none';
+		document.body.style.overflow = "";
+	});
+
 
 
 

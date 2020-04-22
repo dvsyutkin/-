@@ -581,7 +581,8 @@
                 <input class="btn popup__order-files btn_br-24" type="file" name="files" id="files">
                 <label class="btn btn_br-24 label-files " for="files">Добавить фото</label> -->
                 <!-- <button class="btn btn-hero btn-form-submit" type="submit">отправить<img src="img/arrow-down.png" alt=""></button> -->
-                <button class="btn btn-callback btn-order" type="submit">отправить</button>
+                <button class="btn btn-callback btn-order btn-form-submit" type="submit">отправить</button>
+                <button class="popup-form-btn-close">X</button>
             </form>
         </div>
     </div>
@@ -595,7 +596,7 @@
     <script src="js/script.js"></script>
     <script >
         window.addEventListener('DOMContentLoaded', function() {
-                    // owl carusel
+            // owl carusel
             const sliderInfo = $('.owl-carousel');
             sliderInfo.owlCarousel($.extend({}, {
                 autoHeight:true,
