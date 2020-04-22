@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	more.addEventListener('click', function () {
 		let mobMenu = document.querySelector('.mob__menu-more');
 		console.log(mobMenu.style.maxHeight);
-		
+
 		if (mobMenu.style.maxHeight) {
 			mobMenu.style.maxHeight = null;
 		} else {
@@ -36,9 +36,26 @@ window.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
+	// всплывающее окно
+	const btnOrder = document.querySelectorAll('.btn-order'),
+		popupOverlay = document.querySelector('.popup__overlay');
+	btnOrder.forEach(element => {
+		element.addEventListener('click', function () {
+			popupOverlay.style.display = 'block';
+			document.body.style.overflow = "hidden";
+		});
+	});
 
-	
+	popupOverlay.addEventListener('click', function (e) {
+		if (e.target === this) {
+			popupOverlay.style.display = 'none';
+			document.body.style.overflow = "";
+		}
+	});
 
 
-			
+
+
+
+
 });

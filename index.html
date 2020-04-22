@@ -55,7 +55,7 @@
                             <li class="nav__item"><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
-                    <button class="btn btn-callback ">Обратный звонок</button>
+                    <button class="btn btn-callback btn-order">Обратный звонок</button>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
                                 <a href="#" class="hero__desc">Проектирование</a>
                                 <a href="#" S class="hero__desc">реконструкция</a>
                             </div>
-                            <button class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></button>
+                            <a href="portfolio.html" class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></a>
                             <div class="hero__box-nav">
                             </div>
                             
@@ -119,7 +119,7 @@
                                 <a href="#" class="hero__desc">Проектирование</a>
                                 <a href="#" S class="hero__desc">реконструкция</a>
                             </div>
-                            <button class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></button>
+                            <a href="portfolio.html" class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></a>
                             <div class="hero__box-nav">
                             </div>
                             
@@ -143,7 +143,7 @@
                                 <a href="#" class="hero__desc">Проектирование</a>
                                 <a href="#" S class="hero__desc">реконструкция</a>
                             </div>
-                            <button class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></button>
+                            <a href="portfolio.html" class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></a>
                             <div class="hero__box-nav">
                             </div>
                             
@@ -167,7 +167,7 @@
                                 <a href="#" class="hero__desc">Проектирование</a>
                                 <a href="#" S class="hero__desc">реконструкция</a>
                             </div>
-                            <button class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></button>
+                            <a href="portfolio.html" class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></a>
                             <div class="hero__box-nav">
                             </div>
                             
@@ -191,7 +191,7 @@
                                 <a href="#" class="hero__desc">Проектирование</a>
                                 <a href="#" S class="hero__desc">реконструкция</a>
                             </div>
-                            <button class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></button>
+                            <a href="portfolio.html" class="btn btn-white btn-hero">Подробнее о проекте<img src="img/arrow-down.png" alt=""></a>
                             <div class="hero__box-nav">
                             </div>
                             
@@ -502,7 +502,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="footer__nav-wrap">
 
                 <div class="footer__nav-box">
@@ -563,6 +563,30 @@
     </footer>
     <!-- /.footer -->
 
+    <div class="popup__overlay">
+        <div class="popup__order-box">
+            <div class="h2 popup__order-title">Заявка на обратный звонок</div>
+            <div class="popup__order-text p">Оставьте свои контактные данные и мы свяжемся с вами.</div>
+            <form action="#" class="popup__order-form">
+                <label class="popup__order-label h5" for="name">Ваше имя</label>
+                <input class="btn-form popup__order-input btn_br-24" type="text" name="name" id="" required
+                    placeholder="Владислав">
+    
+                <label class="popup__order-label h5" for="phone">Телефон</label>
+                <input class="btn-form popup__order-input btn_br-24" type="tel" name="phone" id="" required placeholder="+7">
+    
+                <!-- <label class="popup__order-label h5" for="description">Описание</label>
+                <input class="btn popup__order-input btn_br-24" type="text" name="description" id="" required>
+    
+                <input class="btn popup__order-files btn_br-24" type="file" name="files" id="files">
+                <label class="btn btn_br-24 label-files " for="files">Добавить фото</label> -->
+                <!-- <button class="btn btn-hero btn-form-submit" type="submit">отправить<img src="img/arrow-down.png" alt=""></button> -->
+                <button class="btn btn-callback btn-order" type="submit">отправить</button>
+            </form>
+        </div>
+    </div>
+    <!-- /.popup__overlay -->
+
     
     <!-- Подключение Jquery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -583,10 +607,6 @@
             next.addEventListener('click', function() {
                 sliderInfo.trigger('next.owl.carousel')
             });
-            // $('.arrow arrow-next').click(console.log('sadsasd'));
-            // $('.arrow-next').click(sliderInfo.trigger('next.owl.carousel'));
-
-            //   Цифры в dot-ах owl-карусели вместо дисков
             var i= 1; 
             $('.owl-dot').each(function(){   
                 $(this).find('span').html(i);   
