@@ -3,32 +3,33 @@
         display: flex
         color: #ffffff
     &__box
+        position: relative
         width: 33.333333%
         padding: 333px 0 55px 90px
         &:hover &-title::after
             width: 100%
+        &::before
+            position: absolute
+            content: ''
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%)
+            opacity: 0
+            transition: 0.3s
+        &:hover::before
+            opacity: 1
+            
         &_1
-            background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 100%), url('../img/cart-1.jpg') center no-repeat
+            background: url('../img/cart-1.jpg') center no-repeat
             background-size: cover
-            transition: 0.3s
-            &:hover
-                background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url('../img/cart-1.jpg') center no-repeat
-                background-size: cover
         &_2
-            background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 100%), url('../img/cart-2.jpg') center no-repeat
+            background: url('../img/cart-2.jpg') center no-repeat
             background-size: cover
-            transition: 0.3s
-            &:hover
-                background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url('../img/cart-2.jpg') center no-repeat
-                background-size: cover
-                
         &_3
-            background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 100%), url('../img/cart-3.jpg') center no-repeat
+            background: url('../img/cart-3.jpg') center no-repeat
             background-size: cover
-            transition: 0.3s
-            &:hover
-                background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url('../img/cart-3.jpg') center no-repeat
-                background-size: cover
                 
         &-title
             display: inline-block

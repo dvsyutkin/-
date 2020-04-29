@@ -101,7 +101,7 @@
             </div>
 
             <div class="portfolio__box portfolio__box_1">
-                <div class="portfolio__box-title">Илим</div>
+                <div class="portfolio__box-title">Васильковые поля</div>
                 <div class="p1 portfolio__box-text">Молодом эко-поселке «Васильковые поля» на живописном участке располагается современный двухэтажный коттедж.</div>
                 <div class="portfolio__address">
                     <div class="portfolio__address-box_1">
@@ -133,7 +133,7 @@
             </div>
 
             <div class="portfolio__box portfolio__box_1">
-                <div class="portfolio__box-title">Илим</div>
+                <div class="portfolio__box-title">Васильковые поля</div>
                 <div class="p1 portfolio__box-text">Молодом эко-поселке «Васильковые поля» на живописном участке располагается современный двухэтажный коттедж.</div>
                 <div class="portfolio__address">
                     <div class="portfolio__address-box_1">
@@ -165,7 +165,7 @@
             </div>
 
             <div class="portfolio__box portfolio__box_1">
-                <div class="portfolio__box-title">Илим</div>
+                <div class="portfolio__box-title">Васильковые поля</div>
                 <div class="p1 portfolio__box-text">Молодом эко-поселке «Васильковые поля» на живописном участке располагается современный двухэтажный коттедж.</div>
                 <div class="portfolio__address">
                     <div class="portfolio__address-box_1">
@@ -179,6 +179,7 @@
                 </div>
                 <a href="ilim.html" class="btn btn-white btn-hero btn-portfolio">Подробнее о проекте</a>
             </div>
+
 
             
         </div>
@@ -295,28 +296,6 @@
     <!-- owl -->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
-    <script >
-        window.addEventListener('DOMContentLoaded', function() {
-            // owl carusel
-            const sliderInfo = $('.owl-carousel');
-            sliderInfo.owlCarousel($.extend({}, {
-                autoHeight:true,
-                items: 1
-
-            }));
-            
-            const next = document.querySelector('.arrow-next');
-            next.addEventListener('click', function() {
-                sliderInfo.trigger('next.owl.carousel')
-            });
-            var i= 1; 
-            $('.owl-dot').each(function(){   
-                $(this).find('span').html(i);   
-                i++; 
-            });
-            
-        });
-    </script>
 </body>
 
 </html>

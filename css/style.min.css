@@ -1025,6 +1025,7 @@ body {
 }
 
 .cart__box {
+  position: relative;
   width: 33.333333%;
   padding: 333px 0 55px 90px;
 }
@@ -1033,36 +1034,34 @@ body {
   width: 100%;
 }
 
-.cart__box_1 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 100%), url("../img/cart-1.jpg") center no-repeat;
-  background-size: cover;
+.cart__box::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  opacity: 0;
   transition: 0.3s;
 }
 
-.cart__box_1:hover {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../img/cart-1.jpg") center no-repeat;
+.cart__box:hover::before {
+  opacity: 1;
+}
+
+.cart__box_1 {
+  background: url("../img/cart-1.jpg") center no-repeat;
   background-size: cover;
 }
 
 .cart__box_2 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 100%), url("../img/cart-2.jpg") center no-repeat;
-  background-size: cover;
-  transition: 0.3s;
-}
-
-.cart__box_2:hover {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../img/cart-2.jpg") center no-repeat;
+  background: url("../img/cart-2.jpg") center no-repeat;
   background-size: cover;
 }
 
 .cart__box_3 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 100%), url("../img/cart-3.jpg") center no-repeat;
-  background-size: cover;
-  transition: 0.3s;
-}
-
-.cart__box_3:hover {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../img/cart-3.jpg") center no-repeat;
+  background: url("../img/cart-3.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -2075,4 +2074,25 @@ body {
 
 .portfolio__address-text {
   color: #ACACAC;
+}
+
+@media (max-width: 1200px) {
+  .portfolio__box {
+    padding: 8rem 6rem 8rem 6.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio__box {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio__box {
+    width: 100%;
+    margin: auto;
+    padding: 3rem 3rem 5rem 4.5rem;
+  }
 }
