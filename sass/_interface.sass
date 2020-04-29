@@ -1,5 +1,7 @@
-body
+html
   font-size: 10px
+body
+  // font-size: inherit
   +mr
 
 .h
@@ -37,6 +39,8 @@ body
 
 .black
   color: #000000
+.white-color
+  color: #ffffff
 
 
 .btn
@@ -50,15 +54,16 @@ body
   border: 2px $red solid
   border-radius: 8px
   &-white
-    background: #ffffff
+    // background: #ffffff
     border: 2px #ffffff solid
+    color: #ffffff
   &-hero
     display: flex
     max-width: 240px
     align-items: center
     img
       display: inline-block
-      max-width: 6px
+      max-width: 10px
       max-height: 10px
       margin-left: 10px
       transform: rotate(-90deg)
@@ -77,13 +82,14 @@ body
     cursor: pointer
     &-submit
       margin-top: 20px
-
+  &-portfolio
+    justify-content: center
     
         
         
 
 @media (max-width: 992px)
-  body
+  html
     font-size: 9px
   .btn-hero
     max-width: 220px
@@ -91,11 +97,11 @@ body
   
 
 @media (max-width: 768px)
-  body
+  html
     font-size: 8px
 
 @media (max-width: 600px)
-  body
+  html
     font-size: 7px
   .p1
     line-height: 17px
